@@ -1,315 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page meta title</title>
-
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap" rel="stylesheet">
-
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-  <!-- Links -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
-    integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css" />
-
-  <!-- scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
-    integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
-    crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Golden webPage</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href=".\node_modules\bootstrap\dist\css\bootstrap-grid.min.css"> -->
+    <!-- <link rel="application/json" href=".\node_modules\bootstrap\dist\css\bootstrap-grid.min.css.map"> -->
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./sass/style.scss">
+    <!-- fonts awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Noto+Sans+Display:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900"
+        rel="stylesheet">
+    <!-- rules disabling -->
+    <!-- [html-validate-disable aria-hidden] -->
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-fixed-top navbar-light bg-light">
-    <a class="navbar-brand">Shit shop </a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-menu"
-      aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button> 
-    <div class="collapse navbar-collapse" id="mobile-menu">
-      <ul class="navbar-nav">
-
-        <!-- dropdown menu -->
-        <li class="dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">sdf</a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">dropdown item</a>
-            <a href="#" class="dropdown-item">dropdown item</a>
-            <a href="#" class="dropdown-item">dropdown item</a>
-          </div>
-        </li>
-        <li class="nav-item"><a href="#" class="nav-link"> </a> </li>
-        <li class="nav-item"><a href="#" class="nav-link">sdf</a></li>
-      </ul>
-
-      <!-- button group -->
-      <div class="btn-group ml-auto" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-secondary"><i class="fa fa-cart-plus" aria-hidden="true"></i> Cart</button>
-        <button type="button" class="btn btn-secondary"> <i class="fa fa-user" aria-hidden="true"></i> User</button>
-      </div>
-    </div>
-
-  </nav>
-  <div id="main-slider" class="carousel slide" data-ride="carousel" data-interval="false">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="w-100" src="https://i.postimg.cc/wBgBbctK/1.jpg" alt="image">
-        <div class="carousel-caption">
-          <h3>...For Christ Sake...</h3>
-          <h4>Help us to sell this crap</h4>
-          <a href="#" class="btn btn-primary">Check this fuckery out </a>
+    <header class="header-hero">
+        <nav class="navbar">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="golden-logo">Golden</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hero-text">
+            <span>Welcome To Our Store</span>
+            <span>It's nice to meet you</span>
+            <button type="button"> Tell me more</button>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img class="w-100" src="https://i.postimg.cc/XJvYnjcQ/2.jpg" alt="image">
-        <div class="carousel-caption">
-          <h3>Second Image Caption</h3>
-          <h4>Image Subcaption</h4>
-          <a href="#" class="btn btn-primary">Check this fuckery out </a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="w-100" src="https://i.postimg.cc/W484RFrd/3.jpg
-        " alt="image">
-        <div class="carousel-caption">
-          <h3>Third Image Caption</h3>
-          <h4>Image Subcaption</h4>
-          <a href="#" class="btn btn-primary">Check this fuckery out </a>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#main-slider" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#main-slider" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true">
-        <span class="sr-only">Next</span>
-      </span>
-    </a>
-  </div>
-  <section class="products py-5">
-    <div class="container">
-      <div class="row">
-
-        <!-- brands -->
-        <div class="col-md-3 ">
-          <h2 class="pb-5 "> Brands</h2>
-          <div class="list group">
-            <a href="#" class="list-group-item list-group-item-action">Viamus</a>
-            <a href="#" class="list-group-item list-group-item-action">Etiam</a>
-            <a href="#" class="list-group-item list-group-item-action">Preasent</a>
-            <a href="#" class="list-group-item list-group-item-action">Aenan</a>
-            <a href="#" class="list-group-item list-group-item-action">Vestibulum</a>
-          </div>
-        </div>
-        <!-- new arrivals -->
-        <div class="col-md-8 ">
-          <h2 class="pb-5 d-block ">New Arrivals</h2>
-          <div class="row">
-            <div class="col-sm-6 col-lg-4">
-              <div class="card">
-                <div class="image">
-                  <img class="w-100" src="https://i.postimg.cc/W484RFrd/3.jpg" alt="image">
-                </div>
-                <div class="card-body">
-                  <h5 class="py-3">Card caption </h5>
-                  <button type="button" class="btn btn-light py-3">Add to cart</button>
-
-                </div>
-              </div>
-
+    </header>
+    <div class="width-wrapper">
+        <div class="container services">
+            <header class="main-header">
+                <h1>Services</h1>
+                <p>Proin lacullis purus consequat sem cure</p>
+            </header>
+            <div class="s-content content1">
+                <img src="./images/E-Commerce.png" alt="e-commerce">
+                <h2>E-commerce</h2>
+                <p>Proin iaculis purus consequat sem cure
+                    digni ssim. Donec porttitora entum suscipit
+                    aenean rhoncus posuere odio in tincidunt.</p>
             </div>
-            <div class="col-sm-6 col-lg-4">
-              <div class="card">
-                <div class="image">
-                  <img class="w-100" src="https://i.postimg.cc/W484RFrd/3.jpg" alt="image">
-                </div>
-                <div class="card-body">
-                  <h5 class="py-3">Card caption </h5>
-                  <button type="button" class="btn btn-light py-3">Add to cart</button>
-
-                </div>
-              </div>
-
+            <div class="s-content content2">
+                <img class="img-icon" src="./images/Laptop.png" alt="e-commerce">
+                <h2>Web Service</h2>
+                <p>Proin iaculis purus consequat sem cure
+                    digni ssim. Donec porttitora entum suscipit
+                    aenean rhoncus posuere odio in tincidunt.</p>
             </div>
-            <div class="col-sm-6 col-lg-4">
-              <div class="card">
-                <div class="image">
-                  <img class="w-100" src="https://i.postimg.cc/W484RFrd/3.jpg" alt="image">
-                </div>
-                <div class="card-body">
-                  <h5 class="py-3">Card caption </h5>
-                  <button type="button" class="btn btn-light py-3">Add to cart</button>
-
-                </div>
-              </div>
-
+            <div class="s-content content3">
+                <img class="img-icon" src="./images/Locked.png" alt="e-commerce">
+                <h2>Web Security</h2>
+                <p>Proin iaculis purus consequat sem cure
+                    digni ssim. Donec porttitora entum suscipit
+                    aenean rhoncus posuere odio in tincidunt.</p>
             </div>
-            <div class="col-sm-6 col-lg-4 d-lg-none">
-              <div class="card">
-                <div class="image">
-                  <img class="w-100" src="https://i.postimg.cc/W484RFrd/3.jpg" alt="image">
-                </div>
-                <div class="card-body">
-                  <h5 class="py-3">Card caption </h5>
-                  <button type="button" class="btn btn-light py-3">Light</button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </section>
-  <section class="big-pics container my-5">
-    <div class="row">
-      <div class="col-md-6 ">
-        <div class="card align-items-center justify-content-center">
-          <div class="image">
-            <img class="w-100" src="https://i.postimg.cc/W484RFrd/3.jpg" alt="image">
-          </div>
-          <div class="card-body position-absolute text-center">
-            <h5>Winter Sale </h5>
-            <button type="button" class="justify-content-center btn btn-primary">See deals</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 ">
-        <div class="card align-items-center justify-content-center">
-          <div class="image">
-            <img class="w-100" src="https://i.postimg.cc/W484RFrd/3.jpg" alt="image">
-          </div>
-          <div class="card-body position-absolute text-center ">
-            <h5>Lookbook </h5>
-            <button type="button" class="justify-content-center btn btn-primary">Get inspired</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-12  mt-3">
-        <div class="card align-self-center justify-content-center text-center">
-          <div class="image">
-            <img class="w-100" src="https://i.postimg.cc/W484RFrd/3.jpg" alt="image">
-          </div>
-          <div class="card-body position-absolute align-self-center">
-            <h5>New Ideas </h5>
-            <button type="button" class="justify-content-center btn btn-primary">Go to fuckinger blog</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="container my-5 ">
-    <div class="row py-3 justify-content-between">
-      <div class="col-12 col-md-4 py-3 mb-2 mw-30 border">
-        <div class="row">
-          <div class="col-2-md pt-4 pl-3">
-            <i class="fa fa-truck"></i>
-          </div>
-          <div class="col-10-md">
-            <div class="card-body pl-5">            
-              <h3>Paid Shipping </h3>
-              <p>delivery costs beyond belief</p>
+    <div class="color-wrapper">
+        <div class="width-wrapper">
+            <div class="container portfolio">
+                <header class="main-header">
+                    <h1>Our Portfolio</h1>
+                    <p>Proin lacullis purus consequat sem cure</p>
+                </header>
+                <div class="s-content content1">
+                    <img src="./images/ebony_ivory.png" alt="ebony_ivory">
+                    <h2>Ebony &amp; Ivory</h2>
+                    <p>Branding</p>
+                </div>
+                <div class="s-content content2">
+                    <img src="./images/Smart Stationary.png" alt="Smart Stationary">
+                    <h2>Smart Stationary</h2>
+                    <p>Print design</p>
+                </div>
+                <div class="s-content content3">
+                    <img src="./images/Clever Poster.png" alt="Clever Poster">
+                    <h2>E-commerce</h2>
+                    <p>Print design</p>
+                </div>
+                <div class="s-content content4">
+                    <img src="./images/vinyl_record.png" alt="Clever Poster">
+                    <h2>Vinyl Record</h2>
+                    <p>Product Mockup</p>
+                </div>
+                <div class="s-content content5">
+                    <img src="./images/treehouse template.png" alt="Clever Poster">
+                    <h2>Treehouse template</h2>
+                    <p>Web design</p>
+                </div>
+                <div class="s-content content6">
+                    <img src="./images/burned_logo.png" alt="Clever Poster">
+                    <h2>Burned Logo</h2>
+                    <p>Branding</p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="col-12 col-md-4 py-3 mb-2 mw-30 border">
-        <div class="row">
-          <div class="col-2-md pt-4 pl-3">
-            <i class="fa fa-money-bill-wave"></i>
-          </div>
-          <div class="col-10-md">
-            <div class="card-body">            
-              <h3>Negligible refund policy </h3>
-              <p>Once you buy from us it's yours forever</p>
-            </div>
-          </div>
+    </div>
+    <footer>
+        <span>© Copyright 2014 FreebiesXpress.com</span>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-google-plus"></i></a>
         </div>
-      </div>
-      <div class="col-12 col-md-4 py-3 mb-2 mw-30 border">
-        <div class="row">
-          <div class="col-2-md pt-4 pl-3 ">
-            <i class="fa fa-life-ring" aria-hidden="true"></i>
-          </div>
-          <div class="col-10-md ">
-            <div class="card-body">            
-              <h3>Go cry to Your mama </h3>
-              <p>When the deal is done, we're gone</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class=" container newsletter-contact pb-md-5">
-    <div class=" newsletter-contact row justify-content-center pb-md-5 py-5 p-md-0">
-      <!-- Fuckinger -->
-      <div class="col-md-4 order-md-1 "> 
-        <h3>FUCKINGER</h3>
-        <p>Take a look on facehook or instaspam</p>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-youtube"></i>
-      </div>
-      <!-- Contact us -->
-      <div class="col-md-4 order-md-2 pt-5 p-md-0  "> 
-        <h3>Spam us</h3>
-        <p>2795 Cunnigam Court<br>
-            Rochester Hills 48306 Michigan<br>
-            Rochester Hills 48306 Michigan<br>
-            suckdeep@ourballs.com
-        </p>
-        
-      </div>
-      <!-- Newsletter ss-->
-      <div class="col-md-4  order-md-0  pt-5 p-md-0 "> 
-        <h3>Spamletter</h3>
-        <p>Lorem ipsum dolor sit amet</p>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail">Spamming email address</label>
-            <input type="email" class="form-control w-75" id="exampleInputEmail" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text-muted"> We'll share Your email with whoever asks.</small>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-      
-       
-    </div>
-  </section>
-  <footer class="footer ">
-    <div class="footer-inner py-md-4 m-auto">
-      <div class="row justify-content-between">
-      <div class="col-md-4  text-left">
-        <p> &copy; Fuckinger Ltd.</p>
-      </div>
-      <div class="col-md-6 ">
-        <ul class="list-inline text-right">
-          <li class="list-inline-item"><a href="#">About</a></li>
-          <li class="list-inline-item"><a href="#">Delivery</a></li>
-          <li class="list-inline-item"><a href="#">Returns</a></li>
-          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-          <li class="list-inline-item"><a href="#">Terms and Conditions</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
 </body>
 
 </html>
